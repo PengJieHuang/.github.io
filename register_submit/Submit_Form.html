@@ -1,0 +1,80 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>表单提交</title>
+</head>
+<body background="background.jpg" style="background-repeat:no-repeat;background-size:100% 100%;background-attachment:fixed;">
+<style type="text/css">
+    .mytable{
+        width:500px;
+        height:500px;
+        margin:0 auto;
+    }
+</style>
+     <table border="1px" class="mytable" width="500px" height="300px" cellpadding="0px" cellspacing="0px" align="center">
+    <!-- 10行3列  -->
+        <tr>
+            <td colspan='3' align="center" style="color:red;">注册</td>
+        </tr>
+        <tr>
+            <td width="33.3%" align="center">用户名</td>
+            <td colspan="2"><input type="text" name="name" id="name" ></td>
+        </tr>
+        <tr>
+            <td width="33.3%" align="center">头像</td>
+            <td colspan="2"><input type="file"></td>
+        </tr>
+        <tr>
+            <td width="33.3%" align="center">密码</td>
+            <td colspan="2"><input type="password" name="password" id="password"></td>
+        </tr>
+        <tr>
+            <td width="33.3%" align="center">性别</td>
+            <td colspan='2'>
+                <input type="radio" name="sex" value="男" checked="checked">男
+                <input type="radio" name="sex" value="女">女
+            </td>
+        </tr>
+        <tr>
+            <td width="33.3%" align="center">生日</td>
+            <td colspan='2'>
+                <select name="birth" id="birth">
+                    <option value="1">1月</option>
+                    <option value="2">2月</option>
+                    <option value="3">3月</option>
+                    <option value="4">4月</option>
+                    <option value="5">5月</option>
+                    <option value="6">6月</option>
+                    <option value="7">7月</option>
+                    <option value="8">8月</option>
+                    <option value="9">9月</option>
+                    <option value="10">10月</option>
+                    <option value="11">11月</option>
+                    <option value="12">12月</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td width="33.3%" align="center">出生日期</td>
+            <td colspan="2"><input type="text" name="birth" id="birth"></td>
+        </tr>
+        <tr>
+            <td width="33.3%" align="center">电话</td>
+            <td colspan="2"><input type="text" name="phone" id="phone" ></td>
+        </tr>
+        <tr>
+            <td width="33.3%" align="center">邮箱</td>
+            <td colspan="2"><input type="text" name="email" id="email" ></td>
+        </tr>
+        <tr>
+            <td colspan='3' align="center">
+                <a href="../实验一/first.html">
+                    <input type="button" value="提交" />
+                </a>
+                <input type="reset" value="重置" />
+            </td>
+        </tr>
+    </table>
+</body>
+</html>
