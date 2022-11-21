@@ -1,29 +1,58 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
 <head>
-    <meta charset="utf-8" />
-    <title>Gamedev Canvas Workshop</title>
-    <style>
-    	* { padding: 0; margin: 0; }
-    	canvas { background: #eee; display: block; margin: 0 auto; }
-    </style>
-	<!--style 中type 属性是必需的，定义 style 元素的内容。唯一可能的值是 "text/css"。style元素位于head 部分中。*是通配符，先统一样式。.是类（class），-->
-
-<!--css代码如下：
-*{ color:red；}//*表示所有的元素如果没有样式调用都会运用这种样式
-body{ color:green；}
-#id{ color:blue;}
-.class{ color:yellow;}
-
-优先级别顺序为style高于id高于class，与顺序是没有关系的-->
-
-</head>
-<body>
- <!--alt alternative 无法显示图片时代替（必须）--->
-<img src = "hj1.png" alt = "滑稽" id = "hj" style = "display: none">
-<canvas id="myCanvas" width="480" height="320"></canvas>
-
-<script type = "text/javascript" charset = "uft-8" src = "test.js"></script>
-
-</body>
-</html>
+<meta charset="utf-8">
+<title>个人网页</title>
+   
+<style>
+         .biaoge{
+             position: absolute;
+             bottom: 265px;
+             width: 100%;
+             height: 100px;
+             text-align:center;
+         }
+     </style>
+     
+     <!--    a:link，定义正常链接的样式； 
+             a:visited，定义已访问过链接的样式； 
+             a:hover，定义鼠标悬浮在链接上时的样式； 
+             a:active，定义鼠标点击链接时的样式。     -->
+     <style>
+         a:link { 
+             color:#FFFFFF; 
+             font-size: 28px;
+             text-decoration:none; 
+         } 
+         a:visited { 
+             color:#FFFFFF; 
+             text-decoration:none; 
+         } 
+         a:hover { 
+             color:#000000; 
+             text-decoration:none; 
+         } 
+         a:active { 
+             color:#FFAEB9; 
+             text-decoration:none; 
+         } 
+     </style>
+     
+ </head>
+ <body background="background/background.jpg" style="background-repeat:no-repeat;background-size:100% 100%;background-attachment:fixed;">
+ <h1 style="text-align:center;padding-top: 100px">个人网页</h1>
+ <div class="biaoge">
+     <table align="center">
+        <tr>
+            <td><a href="register_submit/Submit_Form.html">Register</a></td>
+        </tr>
+         <tr>
+             <td><a href="canvas_workshop/index.html">Gamedev Canvas Workshop</a></td>
+         </tr>
+         <tr>
+             <td><a href="https://www.baidu.com/">Other</a></td>
+         </tr>
+     </table>
+ </div>
+ </body>
+ </html>
